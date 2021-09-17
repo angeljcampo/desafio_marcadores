@@ -1,0 +1,11 @@
+<% @marks.each do |mark| %>
+      <tr>
+        <td><a href="<%= mark.url %>"><i class="fas fa-bookmark"></i></a></td>
+        <td><%= mark.name %></td>
+        <td><%= mark.subcategory.to_s %></td>
+        <td><%= mark.subcategory.id %></td>
+        <td><%= link_to 'Show', mark %></td>
+        <td><%= link_to 'Edit', edit_mark_path(mark) %></td>
+        <td><%= link_to 'Destroy', mark, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @mark.name %>
+</p>
+
+<p>
+  <strong>URL:</strong>
+  <%= @mark.url %>
+</p>
+
+<p>
+  <strong>Subcategory:</strong>
+  <%= @mark.subcategory %>
+</p>
+
+<%= link_to 'Edit', edit_mark_path(@mark) %> |
+<%= link_to 'Back', marks_path %>
